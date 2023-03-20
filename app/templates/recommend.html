@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block content %}　
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>热门推荐</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='hot.css') }}">
+</head>
+<body>
+  <header>
+    <h1>热门推荐</h1>
+  </header>
+  <main>
+    <section class="hot-items">
+      <h2>热门书籍</h2>
+      <div class="item-list">
+        <div class="item">
+          <img src="book1.jpg" alt="book1">
+          <h3>书籍1</h3>
+          <p>描述1</p>
+        </div>
+        <div class="item">
+          <img src="book2.jpg" alt="book2">
+          <h3>书籍2</h3>
+          <p>描述2</p>
+        </div>
+        <div class="item">
+          <img src="book3.jpg" alt="book3">
+          <h3>书籍3</h3>
+          <p>描述3</p>
+        </div>
+      <div class="item">
+          <img src="book1.jpg" alt="book1">
+          <h3>书籍1</h3>
+          <p>描述1</p>
+        </div>
+      </div>
+    </section>
+    <section class="hot-items">
+      <div class="item-list">
+        <div class="item">
+          <img src="movie1.jpg" alt="movie1">
+          <h3>书籍4</h3>
+          <p>描述1</p>
+        </div>
+        <div class="item">
+          <img src="movie2.jpg" alt="movie2">
+          <h3>书籍5</h3>
+          <p>描述2</p>
+        </div>
+        <div class="item">
+          <img src="movie3.jpg" alt="movie3">
+          <h3>书籍6</h3>
+          <p>描述3</p>
+        </div>
+          <div class="item">
+          <img src="movie3.jpg" alt="movie3">
+          <h3>书籍6</h3>
+          <p>描述3</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+{% endblock %}

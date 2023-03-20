@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}　
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ BookID }} 类别书籍</title>
+</head>
+<body>
+  <h1>{{ BookID }} 类别书籍</h1>
+
+  <ul>
+    <li><a href="/categories?BookID=9787506365680">小说</a></li>
+    <li><a href="/books?category=non-fiction">非小说类</a></li>
+    <li><a href="/books?category=biography">传记</a></li>
+    <li><a href="/books?category=history">历史</a></li>
+    <li><a href="/books?category=science">科学</a></li>
+  </ul>
+  <ul>
+    {% for book in books %}
+    <li>{{ book.书名 }} - {{ book.作者 }}</li>
+    {% endfor %}
+  </ul>
+
+</body>
+</html>
+{% endblock %}
